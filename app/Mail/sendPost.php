@@ -10,7 +10,7 @@ class sendPost extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $contacto;
+    public $request;
     
 
     /**
@@ -18,9 +18,9 @@ class sendPost extends Mailable
      *
      * @return void
      */
-    public function __construct($contacto)
+    public function __construct($request)
     {
-        $this->contacto = $contacto;
+        $this->request = $request;
     }
 
     /**
