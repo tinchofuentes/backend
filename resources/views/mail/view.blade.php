@@ -7,7 +7,10 @@
     <title>Correo</title>
 </head>
 <body>
-    <h1>Gracias por contactarnos</h1>
-    <p>A la brevedad nos contactaremos.</p>
+    <h2>Tienes un mensaje nuevo!</h2>
+    <p>Recibiste un mensaje de {{ $details['name']}}</p>
+    <p>Email de contacto: {{ $details['email']}}</p>
+    <p>Teléfono de contacto: {{ $details['phone']}}</p>
+    <p>Mensaje del contacto: {{ $details['message']}}</p>
 </body>
 </html>
