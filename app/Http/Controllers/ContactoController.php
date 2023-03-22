@@ -47,7 +47,7 @@ class ContactoController extends Controller
             'title' => $request->title,
             'body' => $request->description,
         ];
-        \Mail::to('grupo20.2203@gmail.com')->send(new \App\Mail\sendPost($details));
+        \Mail::to('grupo20.2203@gmail.com')->send(new \App\Mail\sendPost($contacto));
         return \response()->json([
             'mensaje' => 'Se agrego correctamente el contacto',
             'data' => $contacto,
