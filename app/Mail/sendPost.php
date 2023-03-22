@@ -10,16 +10,17 @@ class sendPost extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $details;
+    public $contacto;
+    
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($details)
+    public function __construct($contacto)
     {
-        $this->details = $details;
+        $this->contacto = $contacto;
     }
 
     /**
