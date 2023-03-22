@@ -29,7 +29,7 @@ class sendPost extends Mailable
      */
     public function build()
     {
-        return $this->subject('Contacto')
+        return $this->subject('Nuevo Contacto')
         ->view('mail.view');
     }
 }
