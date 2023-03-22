@@ -8,9 +8,9 @@
 </head>
 <body>
     <h2>Tienes un mensaje nuevo!</h2>
-    <p>Recibiste un mensaje de {{ $contacto['name']}}</p>
-    <p>Email de contacto: {{ $contacto['email']}}</p>
-    <p>Teléfono de contacto: {{ $contacto['phone']}}</p>
-    <p>Mensaje del contacto: {{ $contacto['message']}}</p>
+    <h3>Recibiste un mensaje de <strong>{{ $contacto['name']}}</strong></h3>
+    <p>Email de contacto: <strong>{{ $contacto['email']}}</strong></p>
+    <p>Teléfono de contacto: <strong>{{ $contacto['phone']}}</strong></p>
+    <p>Mensaje del contacto: <strong>{{ $contacto['message']}}</strong></p>
 </body>
 </html>
